@@ -1,0 +1,96 @@
+/* Normalize */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Variables */
+:root {
+    --primaryTextColor: #151618;
+    --commonColorWhite: #FFF;
+    --lightBackground: #754E29;
+    --timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    color: var(--primaryTextColor);
+
+    background-color: var(--commonColorWhite);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* font-family: 'Cormorant', serif; */
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    font-style: normal;
+    color: var(--primary-text-color);
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed; */
+}
+
+img {
+    display: flex;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.wrapper {
+    overflow: hidden;
+}
