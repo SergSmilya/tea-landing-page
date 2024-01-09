@@ -20,8 +20,9 @@
         <div class="container">
           <div class="header__inner">
             <a href="#" class="logo">
-              <!-- Will add svg-sprites -->
-              <img src="images/logo.svg" alt="logo" class="logo__img" />
+              <svg class="logo__img">
+                <use href="images/icons/sprites.svg#logo"></use>
+              </svg>
             </a>
 
             <nav class="header__nav">
@@ -52,28 +53,25 @@
 
             <ul class="header-action__list">
               <li class="header-action__item">
-                <a href="#" class="header-action__link"
-                  ><img
-                    src="images/icons/trash.svg"
-                    alt="trash"
-                    class="header-action__img"
-                /></a>
+                <a href="#" class="header-action__link">
+                  <svg class="header-action__img">
+                    <use href="images/icons/sprites.svg#trash"></use>
+                  </svg>
+                </a>
               </li>
               <li class="header-action__item">
-                <a href="#" class="header-action__link"
-                  ><img
-                    src="images/icons/user.svg"
-                    alt="user"
-                    class="header-action__img"
-                /></a>
+                <a href="#" class="header-action__link">
+                  <svg class="header-action__img header-action__img-user">
+                    <use href="images/icons/sprites.svg#user"></use>
+                  </svg>
+                </a>
               </li>
               <li class="header-action__item header-action__item-search">
-                <a href="#" class="header-action__link"
-                  ><img
-                    src="images/icons/search.svg"
-                    alt="search"
-                    class="header-action__img"
-                /></a>
+                <a href="#" class="header-action__link">
+                  <svg class="header-action__img">
+                    <use href="images/icons/sprites.svg#search"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
