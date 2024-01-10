@@ -25,14 +25,32 @@
               </svg>
             </a>
 
-            <nav class="header__nav">
-              <button type="button" class="burger-menu">
+            <nav class="header__nav" id="js-header-nav">
+              <!-- Burger-menu__button-open -->
+              <button type="button" class="burger-menu" id="js-menu-open">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
               </button>
+              <!-- Nav-list -->
               <ul class="nav__list">
+                <!-- Burger-menu__button-close -->
+                <li class="burger-menu__btn-item">
+                  <button
+                    type="button"
+                    class="burger-menu__btn-close"
+                    id="js-menu-close"
+                  >
+                    <svg
+                      class="burger-menu__icon-close"
+                      width="20px"
+                      height="20px"
+                    >
+                      <use href="images/icons/sprites.svg#close"></use>
+                    </svg>
+                  </button>
+                </li>
                 <li class="nav__item">
                   <a href="#" class="nav__link">Black</a>
                 </li>
@@ -47,6 +65,47 @@
                 </li>
                 <li class="nav__item">
                   <a href="#" class="nav__link">Pu-erh</a>
+                </li>
+
+                <!-- Mobile-nav -->
+                <li class="mobile-menu">
+                  <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                      <a href="#" class="mobile-menu__link">Contact Us</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                      <a href="#" class="mobile-menu__link">Our Blog</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                      <a href="#" class="mobile-menu__link"
+                        >Shipping and Delivery</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- Mobile-action -->
+                  <ul class="mobile-action">
+                    <li class="mobile-action__item">
+                      <a href="#" class="mobile-action__link">
+                        <svg class="header-action__img">
+                          <use href="images/icons/sprites.svg#trash"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mobile-action__item">
+                      <a href="#" class="mobile-action__link">
+                        <svg class="header-action__img header-action__img-user">
+                          <use href="images/icons/sprites.svg#user"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="mobile-action__item">
+                      <a href="#" class="mobile-action__link">
+                        <svg class="header-action__img">
+                          <use href="images/icons/sprites.svg#search"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>

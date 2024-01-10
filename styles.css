@@ -134,12 +134,21 @@ select {
 .burger-menu {
     display: none;
 }
+/* Burger-menu__button-close */
+.burger-menu__btn-item {
+    display: none;
+}
 
+/* Nav-list */
 .nav__list {
     display: flex;
     column-gap: 65px;
     font-size: 18px;
     font-weight: 400;
+}
+/* Mob-menu */
+.mobile-menu {
+    display: none;
 }
 
 /* Header-actions */
@@ -164,7 +173,7 @@ select {
 }
 
 /* Main */
-/* Hero-section*/
+/* Hero-section */
 .hero__section {
     background-image: linear-gradient(180deg,
     rgba(0, 0, 0, 0.00) 40.1%,
@@ -240,10 +249,15 @@ select {
         padding: 0 65px;
     }
 
+    .header__inner {
+        position: relative;
+    }
+
     .header__nav {
         order: -1;
     }
 
+    /* Burger-menu */
     .burger-menu {
         display: flex;
         flex-direction: column;
@@ -255,11 +269,61 @@ select {
         width: 100%;
         border: 1px solid var(--commonColorBlack);
     }
-    
     .nav__list {
         display: none;
     }
-
+    /* !!!!!!!!!!!! Wrong */
+    .nav__item:last-child {
+        margin-bottom: 60px;
+    }
+    /* Mob-menu */
+    .mobile-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid var(--lightBackground);
+    }
+    .mobile-menu__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        padding: 60px 0;
+    }
+    /* Burger-menu__button-close */
+    .burger-menu__btn-item {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+    }
+    .header__nav.menu__open .nav__list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 360px;
+        background-color: var(--commonColorWhite);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+    /* mob-action */
+    .mobile-action {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 70px;
+        margin: 0 auto;
+        background-color: var(--lightBackground);
+    }
+    
     .header-action__item-search {
         margin-left: 30px;
     }
